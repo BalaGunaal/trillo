@@ -369,6 +369,7 @@ body {
     outline: none;
     display: block;
     color: var(--color-Primary);
+    background-color: inherit;
     border-bottom: 0.1rem solid var(--color-Primary);
     transition: all .6s; }
     .review_btn:hover {
@@ -404,6 +405,7 @@ body {
 .btn_inline {
   display: inline-block;
   color: var(--color-Primary);
+  background-color: inherit;
   border: none;
   border-bottom: .130rem solid currentColor;
   cursor: pointer;
