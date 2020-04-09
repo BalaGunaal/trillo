@@ -1,0 +1,230 @@
+<!-- "watch:sass": "node-sass sass/main.scss styles.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+
+    "compile:sass": "node-sass sass/main.scss style.comp.css",
+    "concat:css": "concat -o style.concat.css icon-styles.css style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 15 versions' style.concat.css -o style.prefix.css",
+    "compress:css": "node-sass style.prefix.css styles.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css" -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Onemile</title>
+    <link rel="stylesheet" href="CSS/style.css">
+  </head>
+
+
+  <body>
+      <div class="container">
+                      <!-----------HEADER-------------->
+        <header class="header">
+          <div class="logo_box">
+            <img src="img/logo.png" alt="logo" class="logo">
+            <p class="logo_box-para">OneMile</p>
+          </div>
+
+
+          <form action="#" class="search">
+            <input type="text" class="search_input" placeholder="Search hotels">
+            <button class="search_button">
+              <svg class="search_icon">
+                <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+              </svg>
+            </button>
+          </form>
+
+          <nav class="user-nav">
+            <div class="user-nav_icon-box">
+              <svg class="user-nav_icon">
+                <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+              </svg>
+              <span class="user-nav_notification">7</span>
+            </div>
+            <div class="user-nav_icon-box">
+              <svg class="user-nav_icon">
+                <use xlink:href="img/sprite.svg#icon-chat"></use>
+              </svg>
+              <span class="user-nav_notification">13</span>
+            </div>
+            <div class="user-nav_user">
+              <img src="img/bala.jpeg" alt="" class="user-nav_user-pic">
+              <span>Bala</span>
+            </div>
+          </nav>
+
+        </header>
+
+                      <!-----------CONTENT-------------->
+        <div class="content">
+          <!--navigation-->
+          <nav class="side-bar">
+            <ul class="side-bar_list">
+              <li class="side-bar_list-item side-bar_list-item--active">
+                <a href="" class="side-bar_link">
+                  <svg class="side-bar_icon">
+                    <use xlink:href="img/sprite.svg#icon-home"></use>
+                  </svg>
+                  <span class="side-bar_link-text">Hotel</span>
+                </a>
+              </li>
+              <li class="side-bar_list-item">
+                <a href="" class="side-bar_link">
+                  <svg class="side-bar_icon">
+                    <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
+                  </svg>
+                  <span class="side-bar_link-text">Flight</span>
+                </a>
+              </li>
+              <li class="side-bar_list-item">
+                <a href="" class="side-bar_link">
+                  <svg class="side-bar_icon">
+                    <use xlink:href="img/sprite.svg#icon-key"></use>
+                  </svg>
+                  <span class="side-bar_link-text">Car rental</span>
+                </a>
+              </li>
+              <li class="side-bar_list-item">
+                <a href="" class="side-bar_link">
+                  <svg class="side-bar_icon">
+                    <use xlink:href="img/sprite.svg#icon-map"></use>
+                  </svg>
+                  <span class="side-bar_link-text">Tours</span>
+                </a>
+              </li>
+            </ul>
+          <!--------->
+          <div class="copyright">
+            <p class="copyright_text">&copy; 2020 by onemile.All rights reserved</p>
+          </div>
+          </nav>
+
+          <!--main-->
+          <main class="hotel-view">
+            <div class="gallery">
+              <figure class="gallery_item">
+                <img src="img/hotel-1.jpg" alt="Hotel-photo" class="gallery_pic">
+              </figure>
+              <figure class="gallery_item">
+                <img src="img/hotel-2.jpg" alt="Hotel-photo" class="gallery_pic">
+              </figure>
+              <figure class="gallery_item">
+                <img src="img/hotel-3.jpg" alt="Hotel-photo" class="gallery_pic">
+              </figure>
+            </div>
+
+            <div class="overview">
+              <h1 class="overview_heading">Hotel Las Palmas</h1>
+              <div class="overview_stars">
+                <svg class="side-bar_icon overview_icon">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="side-bar_icon overview_icon">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="side-bar_icon overview_icon">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="side-bar_icon overview_icon">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="side-bar_icon overview_icon">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+              </div>
+
+              <div class="overview_location">
+                <svg class="side-bar_icon overview_icon">
+                  <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+                </svg>
+                <button class="btn_inline overview_location-btn_inline">California,USA</button>
+              </div>
+
+              <div class="overview_rating">
+                <div class="overview_rating-average">8.6</div>
+                <div class="overview_rating-count">429 votes </div>
+              </div>
+            </div>
+            <!---------->
+
+            <div class="details">
+              <div class="description">
+                <p class="description_paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi quis commodo odio aenean sed. Velit aliquet sagittis id consectetur. Purus semper eget duis at tellus at.Nec nam aliquam sem et tortor consequat id porta nibh. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit.
+                </p>
+                <p class="description_paragraph">
+                   Velit aliquet sagittis id consectetur. Purus semper eget duis at tellus at. Dictum fusce ut placerat orci nulla pellentesque dignissim enim sit. Odio ut enim blandit volutpat maecenas volutpat. Nec nam aliquam sem et tortor consequat id porta nibh.
+                </p>
+                <ul class="list">
+                  <li class="list-item">Close to the beach</li>
+                  <li class="list-item">Breakfast included</li>
+                  <li class="list-item">Free airport shuttle</li>
+                  <li class="list-item">Free wifi in all rooms</li>
+                  <li class="list-item">Air conditioning and heating</li>
+                  <li class="list-item">Pets allowed</li>
+                  <li class="list-item">We speak all languages</li>
+                  <li class="list-item">Perfect for families</li>
+                </ul>
+                <div class="recommend">
+                  <p class="recommend_count">Sanjay and 3 other friends recommend this hotel.</p>
+                  <div class="recommend_friends">
+                    <img src="img/sanjoo.jpeg" alt="photo-1" class="recommend_photo">
+                    <img src="img/dbc.jpeg" alt="photo-2" class="recommend_photo">
+                    <img src="img/jandu.jpg" alt="photo-3" class="recommend_photo">
+                    <img src="img/boo.jpeg" alt="photo-4" class="recommend_photo recommend_photo-boo">
+                  </div>
+                </div>
+              </div>
+
+              <div class="user-review">
+                <figure class="review">
+                  <blockquote class="review_text">
+                    Velit aliquet sagittis id consectetur. Purus semper eget duis at tellus at. Dictum fusce ut placerat orci nulla pellentesque dignissim enim sit.
+                  </blockquote>
+                  <figcaption class="review_user">
+                    <img src="img/user-1.jpg" alt="user photo" class="review_photo">
+                    <div class="review_user-box">
+                      <p class="review_user-name">Nick Smith</p>
+                      <p class="review_user-date">Nov 23rd, 2019</p>
+                    </div>
+                    <div class="review_rating">9.2</div>
+                  </figcaption>
+                </figure>
+
+                <figure class="review">
+                  <blockquote class="review_text">
+                    Velit aliquet sagittis id consectetur. Purus semper eget duis at tellus at. Dictum fusce ut placerat orci nulla pellentesque dignissim enim sit.
+                  </blockquote>
+                  <figcaption class="review_user">
+                    <img src="img/user-2.jpg" alt="user photo" class="review_photo">
+                    <div class="review_user-box">
+                      <p class="review_user-name">Mary Thomas</p>
+                      <p class="review_user-date">Jan 13th, 2020</p>
+                    </div>
+                    <div class="review_rating">7.9</div>
+                  </figcaption>
+                </figure>
+
+                <button class="review_btn">Show all <span>&rarr;</span></button>
+              </div>
+            </div>
+            <div class="cta">
+              <h2 class="cta_text">Good News! we have 4 free rooms for your selected dates!</h2>
+              <button class="btn">
+                <span class="btn_visible">Book Now</span>
+                <span class="btn_invisible">Only 4 rooms left</span>
+                </button>
+            </div>
+
+          </main>
+
+        </div>
+
+      </div>
+
+
+
+  </body>
+</html>
